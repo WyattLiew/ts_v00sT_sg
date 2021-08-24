@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voost</title>
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Home page -->
+    <div id="homePage_logo">
+        <img src="assets/img/logo.png" alt="#">
+    </div>
+    <div id="homePage">
+        <div id="homePage_selection">
+            <div class="homePage__selection__row">
+                <div class="homePage__selection__col sel__1" id="homePage_sel_allProducts">
+                    <img src="assets/img/img.png" alt="#">
+                    <h2>All Products</h2>
+                    <p>Check out our wide range of great tasting vitamin boost!</p>
+                </div>
+                <div class="homePage__selection__col sel__2" id="homePage_sel_systemPick">
+                    <img src="assets/img/img.png" alt="#">
+                    <h2>Which product suit me?</h2>
+                    <p>Not sure which to choose? Let me help you!</p>
+                </div>
+                <div class="homePage__selection__col sel__3" id="homePage_sel_faq">
+                    <img src="assets/img/img.png" alt="#">
+                    <h2>FAQ</h2>
+                    <p>Ask me!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Products Selection -->
+    <div id="allProducts_selection">
+        <!-- Swiper -->
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper" style="color: black;">
+                <div id="item1" class="swiper-slide"><img src="assets/img/bg.JPG" alt="" ></div>
+                <div id="item2" class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <div>
+            <p>Click to Explore</p>
+        </div>
+    </div>
+
+    <div id="allProducts_page">
+        <div id="allProducts_homeBtn">
+            <button onclick="backToHomePage()">Click me</button>
+        </div>
+    <div id="page1" class="pages" >
+        <div id="touchSurface_page1" class="touch__pages pages_bg_1">
+            <div class="pages__logo">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <div class="pages__products">
+                <img src="assets/img/img.png" alt="">
+            </div>
+            <div class="pages__text">
+                <h1>Header1</h1>
+                <p>Benefits:</p>
+                <div class="pages__row">
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page2" class="pages" >
+        <div id="touchSurface_page2" class="touch__pages pages_bg_2">
+            <div class="pages__logo">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <div class="pages__products">
+                <img src="assets/img/img.png" alt="">
+            </div>
+            <div class="pages__text">
+                <h1>Header2</h1>
+                <p>Benefits:</p>
+                <div class="pages__row">
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/img/img.png" alt="#">
+                        <p>Check out our wide range of great tasting vitamin boost!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page3" class="pages">
+        <div id="touchSurface_page3" class="touch__pages">
+            <h1>Page3</h1>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            centeredSlides: false,
+            spaceBetween: 0,
+            grabCursor: true,
+            // loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // autoplay: {
+            //     delay: 1200,
+            //     disableOnInteraction: true,
+            // }
+        });
+    </script>
+</body>
+
+</html>
