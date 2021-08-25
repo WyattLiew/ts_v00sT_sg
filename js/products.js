@@ -1,5 +1,13 @@
 document.getElementById('item1').addEventListener('click',handlePage1,false);
 document.getElementById('item2').addEventListener('click',handlePage2,false);
+document.getElementById('item3').addEventListener('click',handlePage3,false);
+document.getElementById('item4').addEventListener('click',handlePage4,false);
+document.getElementById('item5').addEventListener('click',handlePage5,false);
+document.getElementById('item6').addEventListener('click',handlePage6,false);
+document.getElementById('item7').addEventListener('click',handlePage7,false);
+document.getElementById('item8').addEventListener('click',handlePage8,false);
+document.getElementById('item9').addEventListener('click',handlePage9,false);
+
 
 
 var homePageLogo = document.getElementById('homePage_logo');
@@ -7,103 +15,420 @@ var allProducts_page = document.getElementById('allProducts_page');
 // Home btn
 function backToHomePage(){
     gsap.to(allProducts_page,{opacity:0,duration:0.3,onComplete:function(){
-        gsap.to("#page1",{zIndex:0});
-        gsap.to("#page2",{zIndex:0});
-        gsap.to("#page3",{zIndex:0});
+        clearAll();
+        allProducts_page.style.display= "none";
         gsap.to("#homePage",{display:'block',onComplete:function(){
-            document.getElementById('homePage_logo').style.display= "block";
-            gsap.to(homePage_selection,{duration:0.3,x:'0%'});
+            homePageLogo.style.display= "block";
+            gsap.to(homePage_selection,{duration:0.8,x:'0%'});
            }});
        }});
 }
 
+function clearAll() {
+    gsap.to("#page1",{zIndex:0});
+    gsap.to("#page2",{zIndex:0});
+    gsap.to("#page3",{zIndex:0});
+    gsap.to("#page4",{zIndex:0});
+    gsap.to("#page5",{zIndex:0});
+    gsap.to("#page6",{zIndex:0});
+    gsap.to("#page7",{zIndex:0});
+    gsap.to("#page8",{zIndex:0});
+    gsap.to("#page9",{zIndex:0});
+
+    gsap.to("#list__img1",{height:'90px'});
+    gsap.to("#list__img1 img",{top:'5px'});
+    gsap.to("#list__img2",{height:'90px'});
+    gsap.to("#list__img2 img",{top:'5px'});
+    gsap.to("#list__img3",{height:'90px'});
+    gsap.to("#list__img3 img",{top:'5px'});
+    gsap.to("#list__img4",{height:'90px'});
+    gsap.to("#list__img4 img",{top:'5px'});
+    gsap.to("#list__img5",{height:'90px'});
+    gsap.to("#list__img5 img",{top:'5px'});
+    gsap.to("#list__img6",{height:'90px'});
+    gsap.to("#list__img6 img",{top:'5px'});
+    gsap.to("#list__img7",{height:'90px'});
+    gsap.to("#list__img7 img",{top:'5px'});
+    gsap.to("#list__img8",{height:'90px'});
+    gsap.to("#list__img8 img",{top:'5px'});
+    gsap.to("#list__img9",{height:'90px'});
+    gsap.to("#list__img9 img",{top:'5px'});
+
+}
+
 function handlePage1(){
-    homePageLogo.style.display= "none"
-    allProducts_selection.style.display= "none"
-    allProducts_page.style.opacity= "1"
-    allProducts_page.style.display= "flex"
-    gsap.to("#page1",{duration:0,zIndex:11});
+    homePageLogo.style.display= "none";
+    allProducts_selection.style.display= "none";
+    allProducts_page.style.opacity= "1";
+    allProducts_page.style.display= "flex";
+    gsap.to("#page1",{duration:0,zIndex:11,opacity: 1});
+    gsap.fromTo("#products_list",{y:'-100%'},{y:'0%',duration:1,delay:0.3});
+    gsap.fromTo("#page1_product",{opacity:0},{opacity:1,duration:1,delay:0.5});
+    gsap.fromTo("#page1_text",{opacity:0},{opacity:1,duration:0.5,delay:0.7});
+    gsap.fromTo("#locateMe_btn1",{opacity:0},{opacity:1,duration:0.5,delay:1});
+    gsap.fromTo("#allProducts_homeBtn",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo(".pages__swipeIcon",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img1",{height:'90px'},{height:'110px',duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img1 img",{top:'5px'},{top:'20px',duration:0.5,delay:1.2});
 }
 
 function handlePage2(){
     homePageLogo.style.display= "none";
     allProducts_selection.style.display= "none";
+    allProducts_page.style.opacity= "1";
+    allProducts_page.style.display= "flex";
+
+    gsap.to("#page2",{duration:0,zIndex:11,opacity: 1});
+    gsap.fromTo("#products_list",{y:'-100%'},{y:'0%',duration:1,delay:0.3});
+    gsap.fromTo("#page2_product",{opacity:0},{opacity:1,duration:1,delay:0.5});
+    gsap.fromTo("#page2_text",{opacity:0},{opacity:1,duration:0.5,delay:0.7});
+    gsap.fromTo("#locateMe_btn2",{opacity:0},{opacity:1,duration:0.5,delay:1});
+    gsap.fromTo("#allProducts_homeBtn",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo(".pages__swipeIcon",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img2",{height:'90px'},{height:'110px',duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img2 img",{top:'5px'},{top:'20px',duration:0.5,delay:1.2});
+}
+
+function handlePage3(){
+    homePageLogo.style.display= "none";
+    allProducts_selection.style.display= "none";
     allProducts_page.style.opacity= "1"
     allProducts_page.style.display= "flex"
-    gsap.to("#page2",{duration:0,x:'-100%',zIndex:11});
+    gsap.to("#page3",{duration:0,zIndex:11,opacity: 1});
+    gsap.fromTo("#products_list",{y:'-100%'},{y:'0%',duration:1,delay:0.3});
+    gsap.fromTo("#page3_product",{opacity:0},{opacity:1,duration:1,delay:0.5});
+    gsap.fromTo("#page3_text",{opacity:0},{opacity:1,duration:0.5,delay:0.7});
+    gsap.fromTo("#locateMe_btn3",{opacity:0},{opacity:1,duration:0.5,delay:1});
+    gsap.fromTo("#allProducts_homeBtn",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo(".pages__swipeIcon",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img3",{height:'90px'},{height:'110px',duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img3 img",{top:'5px'},{top:'20px',duration:0.5,delay:1.2});
 }
+
+function handlePage4(){
+    homePageLogo.style.display= "none";
+    allProducts_selection.style.display= "none";
+    allProducts_page.style.opacity= "1"
+    allProducts_page.style.display= "flex"
+    gsap.to("#page4",{duration:0,zIndex:11,opacity: 1});
+    gsap.fromTo("#products_list",{y:'-100%'},{y:'0%',duration:1,delay:0.3});
+    gsap.fromTo("#page4_product",{opacity:0},{opacity:1,duration:1,delay:0.5});
+    gsap.fromTo("#page4_text",{opacity:0},{opacity:1,duration:0.5,delay:0.7});
+    gsap.fromTo("#locateMe_btn4",{opacity:0},{opacity:1,duration:0.5,delay:1});
+    gsap.fromTo("#allProducts_homeBtn",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo(".pages__swipeIcon",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img4",{height:'90px'},{height:'110px',duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img4 img",{top:'5px'},{top:'20px',duration:0.5,delay:1.2});
+}
+
+function handlePage5(){
+    homePageLogo.style.display= "none";
+    allProducts_selection.style.display= "none";
+    allProducts_page.style.opacity= "1"
+    allProducts_page.style.display= "flex"
+    gsap.to("#page5",{duration:0,zIndex:11,opacity: 1});
+    gsap.fromTo("#products_list",{y:'-100%'},{y:'0%',duration:1,delay:0.3});
+    gsap.fromTo("#page5_product",{opacity:0},{opacity:1,duration:1,delay:0.5});
+    gsap.fromTo("#page5_text",{opacity:0},{opacity:1,duration:0.5,delay:0.7});
+    gsap.fromTo("#locateMe_btn5",{opacity:0},{opacity:1,duration:0.5,delay:1});
+    gsap.fromTo("#allProducts_homeBtn",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo(".pages__swipeIcon",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img5",{height:'90px'},{height:'110px',duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img5 img",{top:'5px'},{top:'20px',duration:0.5,delay:1.2});
+}
+
+function handlePage6(){
+    homePageLogo.style.display= "none";
+    allProducts_selection.style.display= "none";
+    allProducts_page.style.opacity= "1"
+    allProducts_page.style.display= "flex"
+    gsap.to("#page6",{duration:0,zIndex:11,opacity: 1});
+    gsap.fromTo("#products_list",{y:'-100%'},{y:'0%',duration:1,delay:0.3});
+    gsap.fromTo("#page6_product",{opacity:0},{opacity:1,duration:1,delay:0.5});
+    gsap.fromTo("#page6_text",{opacity:0},{opacity:1,duration:0.5,delay:0.7});
+    gsap.fromTo("#locateMe_btn6",{opacity:0},{opacity:1,duration:0.5,delay:1});
+    gsap.fromTo("#allProducts_homeBtn",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo(".pages__swipeIcon",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img6",{height:'90px'},{height:'110px',duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img6 img",{top:'5px'},{top:'20px',duration:0.5,delay:1.2});
+}
+
+function handlePage7(){
+    homePageLogo.style.display= "none";
+    allProducts_selection.style.display= "none";
+    allProducts_page.style.opacity= "1"
+    allProducts_page.style.display= "flex"
+    gsap.to("#page7",{duration:0,zIndex:11,opacity: 1});
+    gsap.fromTo("#products_list",{y:'-100%'},{y:'0%',duration:1,delay:0.3});
+    gsap.fromTo("#page7_product",{opacity:0},{opacity:1,duration:1,delay:0.5});
+    gsap.fromTo("#page7_text",{opacity:0},{opacity:1,duration:0.5,delay:0.7});
+    gsap.fromTo("#locateMe_btn7",{opacity:0},{opacity:1,duration:0.5,delay:1});
+    gsap.fromTo("#allProducts_homeBtn",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo(".pages__swipeIcon",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img7",{height:'90px'},{height:'110px',duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img7 img",{top:'5px'},{top:'20px',duration:0.5,delay:1.2});
+}
+
+function handlePage8(){
+    homePageLogo.style.display= "none";
+    allProducts_selection.style.display= "none";
+    allProducts_page.style.opacity= "1"
+    allProducts_page.style.display= "flex"
+    gsap.to("#page8",{duration:0,zIndex:11,opacity: 1});
+    gsap.fromTo("#products_list",{y:'-100%'},{y:'0%',duration:1,delay:0.3});
+    gsap.fromTo("#page8_product",{opacity:0},{opacity:1,duration:1,delay:0.5});
+    gsap.fromTo("#page8_text",{opacity:0},{opacity:1,duration:0.5,delay:0.7});
+    gsap.fromTo("#locateMe_btn8",{opacity:0},{opacity:1,duration:0.5,delay:1});
+    gsap.fromTo("#allProducts_homeBtn",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo(".pages__swipeIcon",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img8",{height:'90px'},{height:'110px',duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img8 img",{top:'5px'},{top:'20px',duration:0.5,delay:1.2});
+}
+
+function handlePage9(){
+    homePageLogo.style.display= "none";
+    allProducts_selection.style.display= "none";
+    allProducts_page.style.opacity= "1"
+    allProducts_page.style.display= "flex"
+    gsap.to("#page9",{duration:0,zIndex:11,opacity: 1});
+    gsap.fromTo("#products_list",{y:'-100%'},{y:'0%',duration:1,delay:0.3});
+    gsap.fromTo("#page9_product",{opacity:0},{opacity:1,duration:1,delay:0.5});
+    gsap.fromTo("#page9_text",{opacity:0},{opacity:1,duration:0.5,delay:0.7});
+    gsap.fromTo("#locateMe_btn9",{opacity:0},{opacity:1,duration:0.5,delay:1});
+    gsap.fromTo("#allProducts_homeBtn",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo(".pages__swipeIcon",{opacity:0},{opacity:1,duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img9",{height:'90px'},{height:'110px',duration:0.5,delay:1.2});
+    gsap.fromTo("#list__img9 img",{top:'5px'},{top:'20px',duration:0.5,delay:1.2});
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var ts_hp1 = document.getElementById('touchSurface_page1');
 var ts_hp2 = document.getElementById('touchSurface_page2');
 var ts_hp3 = document.getElementById('touchSurface_page3');
+var ts_hp4 = document.getElementById('touchSurface_page4');
+var ts_hp5 = document.getElementById('touchSurface_page5');
+var ts_hp6 = document.getElementById('touchSurface_page6');
+var ts_hp7 = document.getElementById('touchSurface_page7');
+var ts_hp8 = document.getElementById('touchSurface_page8');
+var ts_hp9 = document.getElementById('touchSurface_page9');
+
 
 swipedetect(ts_hp1,function(swipedir){
     if(swipedir =='left'){
-        // gsap.fromTo("#page1",{x:'0'},{x:'-100%',duration:1,onComplete:function(){
-        //     // gsap.to("#page1",{display:'none'});
-        //     // gsap.fromTo("#page2",{display:'block',x:'100%',background: 'black'},{x:'0%',background: 'chartreuse',duration:1});
-        // }});
         gsap.to("#page1",{zIndex:0});
-        gsap.to("#page3",{zIndex:0});
-        gsap.to("#page2",{x:'-100%',zIndex:11});
+        gsap.to("#page9",{zIndex:0});
+        gsap.to("#page2",{zIndex:11,opacity: 1});
+        gsap.to("#list__img1",{height:'90px'});
+        gsap.to("#list__img1 img",{top:'5px'});
+        gsap.fromTo("#list__img2",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img2 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
     } else if(swipedir =='right'){
-        // gsap.fromTo("#page1",{x:'0'},{x:'100%',duration:1,onComplete:function(){
-            // gsap.to("#page1",{display:'none'});
-            // gsap.to("#page2",{display:'none'});
-            // gsap.to("#page3",{display:'block',x:'0%'});
             gsap.to("#page1",{zIndex:0});
             gsap.to("#page2",{zIndex:0});
-            gsap.fromTo("#page3",{x:'-300%'},{x:'-200%',zIndex:11});
+            gsap.to("#page9",{zIndex:11,opacity: 1});
+            gsap.to("#list__img1",{height:'90px'});
+            gsap.to("#list__img1 img",{top:'5px'});
+            gsap.fromTo("#list__img9",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+            gsap.fromTo("#list__img9 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
     }
-// })
-// }
-})
+});
+
 swipedetect(ts_hp2,function(swipedir){
     if(swipedir =='left'){
-        // gsap.fromTo("#page2",{x:'0'},{x:'-100%',duration:1,onComplete:function(){
-            // gsap.to("#page2",{display:'none'});
-            // gsap.to("#page1",{display:'none'});
-            // gsap.to("#page3",{display:'block',x:'0%'});
-        // }});
         gsap.to("#page2",{zIndex:0});
         gsap.to("#page1",{zIndex:0});
-        gsap.to("#page3",{x:'-200%',zIndex:11});
+        gsap.to("#page3",{zIndex:11,opacity: 1});
+        gsap.to("#list__img2",{height:'90px'});
+        gsap.to("#list__img2 img",{top:'5px'});
+        gsap.fromTo("#list__img3",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img3 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
 
     } else if(swipedir =='right'){
-        // gsap.fromTo("#page2",{x:'0'},{x:'100%',duration:1,onComplete:function(){
-            // gsap.to("#page2",{display:'none'});
-            // gsap.to("#page3",{display:'none'});
-            // gsap.to("#page1",{display:'block',x:'0%'});
-            gsap.to("#page2",{zIndex:0});
-            gsap.to("#page3",{zIndex:0});
-            gsap.to("#page1",{x:'0%',zIndex:11});
+        gsap.to("#page2",{zIndex:0});
+        gsap.to("#page3",{zIndex:0});
+        gsap.to("#page1",{zIndex:11,opacity: 1});
+        gsap.to("#list__img2",{height:'90px'});
+        gsap.to("#list__img2 img",{top:'5px'});
+        gsap.fromTo("#list__img1",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img1 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
     }
-// })
-// }
-})
+});
+
 swipedetect(ts_hp3,function(swipedir){
     if(swipedir =='left'){
-        // gsap.fromTo("#page3",{x:'0'},{x:'-100%',duration:1,onComplete:function(){
-        //     gsap.to("#page3",{display:'none'});
-        //     gsap.to("#page2",{display:'none'});
-        //     gsap.fromTo("#page1",{display:'block',x:'100%'},{x:'0%'});
-        //     console.log(swipedir)
-        // }});
         gsap.to("#page3",{zIndex:0});
         gsap.to("#page2",{zIndex:0});
-        gsap.to("#page1",{x:'0%',zIndex:11});
+        gsap.to("#page4",{zIndex:11,opacity: 1});
+        gsap.to("#list__img3",{height:'90px'});
+        gsap.to("#list__img3 img",{top:'5px'});
+        gsap.fromTo("#list__img4",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img4 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+
     } else if(swipedir =='right'){
-//         gsap.fromTo("#page3",{x:'0'},{x:'100%',duration:1,onComplete:function(){
-//             gsap.to("#page3",{display:'none'});
-//             gsap.to("#page1",{display:'none'});
-//             gsap.to("#page2",{display:'block',x:'0%'});
-//     }
-gsap.to("#page3",{zIndex:0});
-gsap.to("#page1",{zIndex:0});
-gsap.to("#page2",{x:'-100%',zIndex:11});
-// })
+            gsap.to("#page3",{zIndex:0});
+            gsap.to("#page4",{zIndex:0});
+            gsap.to("#page2",{zIndex:11,opacity: 1});
+            gsap.to("#list__img3",{height:'90px'});
+        gsap.to("#list__img3 img",{top:'5px'});
+        gsap.fromTo("#list__img2",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img2 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+    }
+});
+
+swipedetect(ts_hp4,function(swipedir){
+    if(swipedir =='left'){
+        gsap.to("#page3",{zIndex:0});
+        gsap.to("#page4",{zIndex:0});
+        gsap.to("#page5",{zIndex:11,opacity: 1});
+        gsap.to("#list__img4",{height:'90px'});
+        gsap.to("#list__img4 img",{top:'5px'});
+        gsap.fromTo("#list__img5",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img5 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+
+    } else if(swipedir =='right'){
+            gsap.to("#page5",{zIndex:0});
+            gsap.to("#page4",{zIndex:0});
+            gsap.to("#page3",{zIndex:11,opacity: 1});
+            gsap.to("#list__img4",{height:'90px'});
+        gsap.to("#list__img4 img",{top:'5px'});
+        gsap.fromTo("#list__img3",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img3 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+    }
+});
+
+swipedetect(ts_hp5,function(swipedir){
+    if(swipedir =='left'){
+        gsap.to("#page5",{zIndex:0});
+        gsap.to("#page4",{zIndex:0});
+        gsap.to("#page6",{zIndex:11,opacity: 1});
+        gsap.to("#list__img5",{height:'90px'});
+        gsap.to("#list__img5 img",{top:'5px'});
+        gsap.fromTo("#list__img6",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img6 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+
+    } else if(swipedir =='right'){
+            gsap.to("#page5",{zIndex:0});
+            gsap.to("#page6",{zIndex:0});
+            gsap.to("#page4",{zIndex:11,opacity: 1});
+            gsap.to("#list__img5",{height:'90px'});
+        gsap.to("#list__img5 img",{top:'5px'});
+        gsap.fromTo("#list__img4",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img4 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+    }
+});
+
+swipedetect(ts_hp6,function(swipedir){
+    if(swipedir =='left'){
+        gsap.to("#page5",{zIndex:0});
+        gsap.to("#page6",{zIndex:0});
+        gsap.to("#page7",{zIndex:11,opacity: 1});
+        gsap.to("#list__img6",{height:'90px'});
+        gsap.to("#list__img6 img",{top:'5px'});
+        gsap.fromTo("#list__img7",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img7 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+
+    } else if(swipedir =='right'){
+            gsap.to("#page7",{zIndex:0});
+            gsap.to("#page6",{zIndex:0});
+            gsap.to("#page5",{zIndex:11,opacity: 1});
+            gsap.to("#list__img6",{height:'90px'});
+        gsap.to("#list__img6 img",{top:'5px'});
+        gsap.fromTo("#list__img5",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img5 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+    }
+});
+
+swipedetect(ts_hp7,function(swipedir){
+    if(swipedir =='left'){
+        gsap.to("#page6",{zIndex:0});
+        gsap.to("#page7",{zIndex:0});
+        gsap.to("#page8",{zIndex:11,opacity: 1});
+        gsap.to("#list__img7",{height:'90px'});
+        gsap.to("#list__img7 img",{top:'5px'});
+        gsap.fromTo("#list__img8",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img8 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+
+    } else if(swipedir =='right'){
+            gsap.to("#page7",{zIndex:0});
+            gsap.to("#page8",{zIndex:0});
+            gsap.to("#page6",{zIndex:11,opacity: 1});
+            gsap.to("#list__img7",{height:'90px'});
+        gsap.to("#list__img7 img",{top:'5px'});
+        gsap.fromTo("#list__img6",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img6 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+    }
+});
+
+swipedetect(ts_hp8,function(swipedir){
+    if(swipedir =='left'){
+        gsap.to("#page7",{zIndex:0});
+        gsap.to("#page8",{zIndex:0});
+        gsap.to("#page9",{zIndex:11,opacity: 1});
+        gsap.to("#list__img8",{height:'90px'});
+        gsap.to("#list__img8 img",{top:'5px'});
+        gsap.fromTo("#list__img9",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img9 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+
+    } else if(swipedir =='right'){
+            gsap.to("#page8",{zIndex:0});
+            gsap.to("#page9",{zIndex:0});
+            gsap.to("#page7",{zIndex:11,opacity:1});
+            gsap.to("#list__img8",{height:'90px'});
+        gsap.to("#list__img8 img",{top:'5px'});
+        gsap.fromTo("#list__img7",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img7 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+    }
+});
+
+swipedetect(ts_hp9,function(swipedir){
+    if(swipedir =='left'){
+        gsap.to("#page8",{zIndex:0});
+        gsap.to("#page9",{zIndex:0});
+        gsap.to("#page1",{zIndex:11,opacity:1});
+        gsap.to("#list__img9",{height:'90px'});
+        gsap.to("#list__img9 img",{top:'5px'});
+        gsap.fromTo("#list__img1",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img1 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
+    } else if(swipedir =='right'){
+        gsap.to("#page9",{zIndex:0});
+        gsap.to("#page1",{zIndex:0});
+        gsap.to("#page8",{zIndex:11,opacity:1});
+        gsap.to("#list__img9",{height:'90px'});
+        gsap.to("#list__img9 img",{top:'5px'});
+        gsap.fromTo("#list__img8",{height:'90px'},{height:'110px',duration:0.5,delay:0.3});
+        gsap.fromTo("#list__img8 img",{top:'5px'},{top:'20px',duration:0.5,delay:0.3});
 }
-})
+});
+
 
 function swipedetect(el, callback){
   
