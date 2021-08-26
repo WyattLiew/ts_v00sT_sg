@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voost</title>
-    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -20,12 +21,12 @@
         <div id="homePage_selection">
             <div class="homePage__selection__row">
                 <div class="homePage__selection__col sel__1" id="homePage_sel_allProducts">
-                    <img src="#" alt="#">
+                    <img src="assets/img/mainPic1.png" alt="#">
                     <h2>All Products</h2>
                     <p>Check out our wide range of great tasting vitamin boost!</p>
                 </div>
                 <div class="homePage__selection__col sel__2" id="homePage_sel_systemPick">
-                    <img src="#" alt="#">
+                    <img src="assets/img/mainPic2.png" alt="#">
                     <h2>Which product suit me?</h2>
                     <p>Not sure which to choose? Let me help you!</p>
                 </div>
@@ -41,42 +42,42 @@
     <!-- All Products Selection -->
     <div id="allProducts_selection">
         <!-- Swiper -->
-        <div class="swiper-container mySwiper">
+        <div class="swiper swiper-container mySwiper1">
             <div class="swiper-wrapper" style="color: black;">
-                <div id="item1" class="swiper-slide bg__item1">
+                <div id="item1" class="swiper-slide swiper-slide__sel bg__item1">
                     <div class="item__img">
                         <img src="assets/products/VÖOST_Mega-B-Complex_20-Pack_Front-No-Shadow.png" alt="" >
                     </div>
                 </div>
-                <div id="item2" class="swiper-slide bg__item2"> <div class="item__img">
+                <div id="item2" class="swiper-slide swiper-slide__sel bg__item2"> <div class="item__img">
                     <img src="assets/products/VÖOST_Vitamin-C_Blood-Orange_20-Pack_Front_No-Shadow_TGO92.png" alt="" >
                 </div>
             </div>
-                <div id="item3" class="swiper-slide bg__item3"> <div class="item__img">
+                <div id="item3" class="swiper-slide swiper-slide__sel bg__item3"> <div class="item__img">
                     <img src="assets/products/VÖOST_Collagen_20-Pack_Front_No-Shadow_TGO92.png" alt="" >
                 </div>
             </div>
-                <div id="item4" class="swiper-slide bg__item4"> <div class="item__img">
+                <div id="item4" class="swiper-slide swiper-slide__sel bg__item4"> <div class="item__img">
                     <img src="assets/products/VÖOST_Vitamin-D_20 Pack_Front_No-Shadow_TGO92.png" alt="" >
                 </div>
             </div>
-                <div id="item5" class="swiper-slide bg__item5"> <div class="item__img__diff">
+                <div id="item5" class="swiper-slide swiper-slide__sel bg__item5"> <div class="item__img__diff">
                     <img src="assets/products/VÖOST_Magnesium_20-Pack_Front_No-Shadow_TGO92.png" alt="" >
                 </div>
             </div>
-                <div id="item6" class="swiper-slide bg__item6"> <div class="item__img__diff">
+                <div id="item6" class="swiper-slide swiper-slide__sel bg__item6"> <div class="item__img__diff">
                     <img src="assets/products/VÖOST_Mv_20 Pack_Front_TGO92.png" alt="" >
                 </div>
             </div>
-                <div id="item7" class="swiper-slide bg__item7"> <div class="item__img">
+                <div id="item7" class="swiper-slide swiper-slide__sel bg__item7"> <div class="item__img">
                     <img src="assets/products/VÖOST_Performance-B+_20-Pack_Front_No-Shadow_TGO92.png" alt="" >
                 </div>
             </div>
-                <div id="item8" class="swiper-slide bg__item8"> <div class="item__img">
+                <div id="item8" class="swiper-slide swiper-slide__sel bg__item8"> <div class="item__img">
                     <img src="assets/products/VÖOST_Energy_20-Pack_Front_No-Shadow_TGO92.png" alt="" >
                 </div>
             </div>
-                <div id="item9" class="swiper-slide bg__item9"> <div class="item__img">
+                <div id="item9" class="swiper-slide swiper-slide__sel bg__item9"> <div class="item__img">
                     <img src="assets/products/VÖOST_Immunity-Blackcurrent_20-Pack_Front_No-Shadow.png" alt="" >
                 </div>
             </div>
@@ -140,8 +141,8 @@
                 
             </div>
         </div>
-        <div id="allProducts_homeBtn">
-            <button onclick="backToHomePage()" class="homeBtn homeBtn__pos"><img src="assets/img/Home.png" alt=""></button>
+        <div id="allProducts_homeBtn"  class="homeBtnCcontainer__pos">
+            <button onclick="backToHomePage(1)" class="homeBtn homeBtn__pos"><img src="assets/img/Home.png" alt=""></button>
         </div>
     <div id="page1" class="pages" >
         <div id="touchSurface_page1" class="touch__pages pages_bg_1">
@@ -213,7 +214,7 @@
                         <p>Support Skin Health</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 18.png" alt="#">
+                        <img src="assets/Products benefits/Asset 5.png" alt="#">
                         <p>Maintain Connective Tissue Health</p>
                     </div>
                     <div class="pages__col">
@@ -221,12 +222,8 @@
                         <p>Support Collagen Formation</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 5.png" alt="#">
+                        <img src="assets/Products benefits/Asset 11.png" alt="#">
                         <p>Maintain Immune System Health</p>
-                    </div>
-                    <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 16.png" alt="#">
-                        <p>Maintain Healthy Teeth</p>
                     </div>
                     <div class="pages__col">
                         <img src="assets/Products benefits/Asset 20.png" alt="#">
@@ -258,7 +255,7 @@
                 <p>Benefits:</p>
                 <div class="pages__row">
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 11.png" alt="#">
+                        <img src="assets/Products benefits/Asset 9.png" alt="#">
                         <p>Reduce Free Radicals Formed In The Body</p>
                     </div>
                     <div class="pages__col">
@@ -266,7 +263,7 @@
                         <p>Support Skin Health</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 18.png" alt="#">
+                        <img src="assets/Products benefits/Asset 5.png" alt="#">
                         <p>Support Connective Tissue Health</p>
                     </div>
                     <div class="pages__col">
@@ -299,19 +296,19 @@
                 <p>Benefits:</p>
                 <div class="pages__row">
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 7.png" alt="#">
-                        <p>Maintain Healthy Bones</p>
+                        <img src="assets/Products benefits/Asset 16.png" alt="#">
+                        <p>Maintain Healthy Teeth</p>
                     </div>
                     <div class="pages__col">
                         <img src="assets/Products benefits/Asset 21.png" alt="#">
                         <p>Promote Calcium Absorption & Bone Formation</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 5.png" alt="#">
+                        <img src="assets/Products benefits/Asset 7.png" alt="#">
                         <p>Support Bone Health</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 9.png" alt="#">
+                        <img src="assets/Products benefits/Asset 11.png" alt="#">
                         <p>Support Immune System Health</p>
                     </div>
                 </div>
@@ -340,7 +337,7 @@
                 <p>Benefits:</p>
                 <div class="pages__row">
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 7.png" alt="#">
+                        <img src="assets/Products benefits/Asset 8.png" alt="#">
                         <p>Support Muscle Health</p>
                     </div>
                     <div class="pages__col">
@@ -377,20 +374,20 @@
                 <p>Benefits:</p>
                 <div class="pages__row">
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 7.png" alt="#">
-                        <p>Maintain Healthy Bones</p>
+                        <img src="assets/Products benefits/Asset 14.png" alt="#">
+                        <p>Support General Health And Wellbeing</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 21.png" alt="#">
-                        <p>Promote Calcium Absorption & Bone Formation</p>
+                        <img src="assets/Products benefits/Asset 14.png" alt="#">
+                        <p>Reduce Free Radicals Formed in the Body</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 5.png" alt="#">
-                        <p>Support Bone Health</p>
+                        <img src="assets/Products benefits/Asset 13.png" alt="#">
+                        <p>Support Energy Production</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 9.png" alt="#">
-                        <p>Support Immune System Health</p>
+                        <img src="assets/Products benefits/Asset 3.png" alt="#">
+                        <p>Support Blood Health</p>
                     </div>
                 </div>
             </div>
@@ -418,20 +415,20 @@
                 <p>Benefits:</p>
                 <div class="pages__row">
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 7.png" alt="#">
-                        <p>Maintain Healthy Bones</p>
+                        <img src="assets/Products benefits/Asset 14.png" alt="#">
+                        <p>Maintain General Health And Wellbeing</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 21.png" alt="#">
-                        <p>Promote Calcium Absorption & Bone Formation</p>
+                        <img src="assets/Products benefits/Asset 13.png" alt="#">
+                        <p>Support Energy Production</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 5.png" alt="#">
-                        <p>Support Bone Health</p>
+                        <img src="assets/Products benefits/Asset 13.png" alt="#">
+                        <p>Support Muscle Performance</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 9.png" alt="#">
-                        <p>Support Immune System Health</p>
+                        <img src="assets/Products benefits/Asset 13.png" alt="#">
+                        <p>Reduce Free Radicals Formed In The Body</p>
                     </div>
                 </div>
             </div>
@@ -459,20 +456,16 @@
                 <p>Benefits:</p>
                 <div class="pages__row">
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 7.png" alt="#">
-                        <p>Maintain Healthy Bones</p>
+                        <img src="assets/Products benefits/Asset 13.png" alt="#">
+                        <p>Support Energy Production</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 21.png" alt="#">
-                        <p>Promote Calcium Absorption & Bone Formation</p>
+                        <img src="assets/Products benefits/Asset 14.png" alt="#">
+                        <p>Support General Health And Wellbeing</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 5.png" alt="#">
-                        <p>Support Bone Health</p>
-                    </div>
-                    <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 9.png" alt="#">
-                        <p>Support Immune System Health</p>
+                        <img src="assets/Products benefits/Asset 15.png" alt="#">
+                        <p>Support Mental Focus</p>
                     </div>
                 </div>
             </div>
@@ -501,19 +494,35 @@
                 <div class="pages__row">
                     <div class="pages__col">
                         <img src="assets/Products benefits/Asset 7.png" alt="#">
-                        <p>Maintain Healthy Bones</p>
+                        <p>Reduce Free Radicals Formed In The Body</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 21.png" alt="#">
-                        <p>Promote Calcium Absorption & Bone Formation</p>
+                        <img src="assets/Products benefits/Asset 7.png" alt="#">
+                        <p>Helps Support Bone Health</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 5.png" alt="#">
-                        <p>Support Bone Health</p>
+                        <img src="assets/Products benefits/Asset 3.png" alt="#">
+                        <p>Support Blood Health</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 9.png" alt="#">
-                        <p>Support Immune System Health</p>
+                        <img src="assets/Products benefits/Asset 11.png" alt="#">
+                        <p>Helps Support Immune System Health And/or Function</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/Products benefits/Asset 20.png" alt="#">
+                        <p>Helps Enhance Absorption Of Dietary Iron</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/Products benefits/Asset 10.png" alt="#">
+                        <p>Helps Support Skin Health</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/Products benefits/Asset 14.png" alt="#">
+                        <p>Support General Health & Wellbeing</p>
+                    </div>
+                    <div class="pages__col">
+                        <img src="assets/Products benefits/Asset 14.png" alt="#">
+                        <p>Helps Reduce The Severity And Duration Of Common Cold Symptoms When Taken Regularly</p>
                     </div>
                 </div>
             </div>
@@ -526,23 +535,115 @@
             </div>
         </div>
     </div>
+</div>
 
-    
 
+<!-- FAQ -->
+<div id="faq_page">
+    <div id="faq_homeBtn" class="homeBtnCcontainer__pos">
+        <button onclick="backToHomePage(2)" class="homeBtn homeBtn__pos"><img src="assets/img/Home.png" alt=""></button>
+    </div>
+    <div class="pages__logo">
+        <img src="assets/logo/VOOST_Logo.png" alt="">
+    </div>
+    <div class="faq__products">
+        <img src="assets/img/faqPic1.png" alt="">
+    </div>
+    <div class="faq__details">
+        <div class="faq__faqIcon">
+            <img src="assets/img/FAQ.png">
+            <span>FAQ</span>
+        </div>
+        <div class="swiper__con">
+            <div class="swiper swiper__faq mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide__faq">
+                    <h5>1. How does VÖOST Effervescent differ from other Supplement Brands? 
+                    </h5>
+                    <ul>
+                        <p>
+                            - Unlike many other effervescent brands, VÖOST has a wide range of vitamins that offers many different benefits. On top, it’s a great tasting vitamin that aims to help you stay boosted for your daily life.
+                        </p>
+                    </ul>
+                    <hr>
+                    <h5>2. Where is VÖOST Effervescent manufactured?</h5>
+                    <ul>
+                        <p>
+                            - Our VÖOST Effervescent ranges are formulated in Australia and are manufactured in Germany
+                        </p>
+                    </ul>
+                    <hr>
+                    <h5>3. What are the VÖOST Effervescent range available in Singapore?
+                    </h5>
+                    <ul>
+                        <p>
+                            - We currently offer 7 Vitamin and Mineral products providing different nutritional benefits. More product innovations are coming on the way. 
+                        </p>
+                    </ul>
+                    <hr>
+                    <h5>4. Is VÖOST suitable for diabetic?
+                    </h5>
+                    <ul>
+                        <p>
+                            - We do not add sugar in VÖOST effervescent tablets. We use Australian regulated and approved artificial sweetener to provide sweetness with little or no energy/kilojoules. We recommended you consulting with Healthcare Professional with any additional questions or concerns. 
+                        </p>
+                    </ul>
+                    <hr>
+                    <h5>5. Can I take VÖOST Effervescent tablets if I have a medical condition?
+                    </h5>
+                    <ul>
+                        <p>
+                            - We recommend you talk to your health professional before taking any vitamins or mineral supplements. They have a better understanding of your medical history and needs
+                        </p>
+                    </ul>
+                    <hr>
+                    <h5>6. Do the VÖOST Effervescent tablets contain preservatives?
+                    </h5>
+                    <ul>
+                        <p>
+                            - We are pleased to advise we do not add preservatives in the VÖOST Effervescent Tablets.
+                        </p>
+                    </ul>
+                    <hr>
+                    <h5>7. Is VÖOST suitable for vegans & vegetarians?
+                    </h5>
+                    <ul>
+                        <p>
+                            - VÖOST Magnesium, Energy, Vitamin B+ Performance, Mega B Complex, Immunity & Vitamin C Effervescent tablets are suitable for vegans and vegetarians. <br><br>
+                            - VÖOST Multivitamin and Collagen Formation are the only products in the range which are NOT suitable for vegans and vegetarians. 
+                            </p>
+                    </ul>
+                    <hr>
+                    <h5>8. How should I store my VÖOST Effervescent tablets?
+
+                    </h5>
+                    <ul>
+                        <p>
+                            - We recommend the effervescent tablets are stored below 25⁰C in a cool, dry place. 
+                        </p>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>  
+            </div>
+        </div>
+    </div>
 </div>
 
 
 
 
-
     <script src="node_modules/gsap/dist/gsap.min.js"></script>
-    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- <script src="node_modules/swiper/swiper-bundle.min.js"></script> -->
     <script src="js/main.js"></script>
     <script src="js/products.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper1 = new Swiper(".mySwiper1", {
             slidesPerView: 4,
             centeredSlides: false,
             spaceBetween: 0,

@@ -8,13 +8,10 @@ document.getElementById('item7').addEventListener('click',handlePage7,false);
 document.getElementById('item8').addEventListener('click',handlePage8,false);
 document.getElementById('item9').addEventListener('click',handlePage9,false);
 
-
-
-var homePageLogo = document.getElementById('homePage_logo');
-var allProducts_page = document.getElementById('allProducts_page');
 // Home btn
-function backToHomePage(){
-    gsap.to(allProducts_page,{opacity:0,duration:0.3,onComplete:function(){
+function backToHomePage(mode){
+    if(mode ==1){
+    gsap.to(allProducts_page,{opacity:0,duration:0.5,onComplete:function(){
         clearAll();
         allProducts_page.style.display= "none";
         gsap.to("#homePage",{display:'block',onComplete:function(){
@@ -22,6 +19,17 @@ function backToHomePage(){
             gsap.to(homePage_selection,{duration:0.8,x:'0%'});
            }});
        }});
+    } else if(mode ==2){
+        gsap.to(faq_page,{opacity:0,duration:0.5,onComplete:function(){
+            clearAll();
+            faq_page.style.display= "none";
+            swiper2.destroy();
+            gsap.to("#homePage",{display:'block',onComplete:function(){
+                homePageLogo.style.display= "block";
+                gsap.to(homePage_selection,{duration:0.8,x:'0%'});
+               }});
+           }});
+    }
 }
 
 function clearAll() {

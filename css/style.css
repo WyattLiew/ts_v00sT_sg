@@ -83,47 +83,48 @@ body {
 .sel__1 img {
   position: absolute;
   left: 0;
-  top: 0;
-  height: 100%;
-  width: 190px;
+  top: 40px;
+  width: 200px;
 }
 
 .sel__1 h2 {
   position: relative;
   font-size: 40px;
-  top: 50px;
-  left: 50px;
+  top: 80px;
+  left: 75px;
 }
 
 .sel__1 p {
   position: relative;
   width: 250px;
-  font-size: 16px;
-  top: 50px;
-  left: 50px;
+  font-size: 19px;
+  top: 80px;
+  left: 75px;
+  line-height: 25px;
 }
 
 .sel__2 img {
   position: absolute;
-  left: 35px;
-  top: 30px;
-  height: 130px;
-  width: 125px;
+  left: 30px;
+  top: 10px;
+  width: 135px;
 }
 
 .sel__2 h2 {
   position: relative;
   font-size: 40px;
-  top: 50px;
+  top: 65px;
   left: 50px;
-  width: 270px;
+  width: 288px;
 }
 
 .sel__2 p {
   position: relative;
-  font-size: 16px;
-  top: 50px;
-  left: 5px;
+  font-size: 19px;
+  top: 65px;
+  left: 50px;
+  width: 240px;
+  line-height: 25px;
 }
 
 .sel__3 img {
@@ -143,7 +144,7 @@ body {
 .sel__3 p {
   position: relative;
   width: 250px;
-  font-size: 16px;
+  font-size: 19px;
   top: 100px;
   left: 50px;
 }
@@ -159,7 +160,7 @@ body {
   height: 55%;
 }
 
-.swiper-slide {
+.swiper-slide__sel {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -257,7 +258,7 @@ body {
   position: relative;
 }
 
-#allProducts_homeBtn {
+.homeBtnCcontainer__pos {
   position: absolute;
   bottom: 100px;
   right: 30px;
@@ -493,8 +494,8 @@ body {
 .pages__text {
   position: absolute;
   left: 435px;
-  top: 140px;
-  width: 55%;
+  top: 115px;
+  width: 60%;
   margin: auto;
   overflow: hidden;
   display: block;
@@ -532,6 +533,88 @@ body {
 .pages__col p {
   font-size: 18px;
   width: 100%;
+}
+
+/* FAQ page */
+#faq_page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.faq__products {
+  position: absolute;
+  left: 50px;
+  top: 160px;
+}
+
+.faq__products img {
+  height: 550px;
+  position: relative;
+}
+
+.faq__details {
+  position: absolute;
+  top: 90px;
+  left: 460px;
+}
+
+.faq__faqIcon {
+  position: relative;
+  bottom: 20px;
+}
+
+.faq__faqIcon img {
+  height: 80px;
+  position: relative;
+}
+
+.faq__faqIcon span {
+  position: relative;
+  font-size: 60px;
+  font-weight: 600;
+  padding-left: 12px;
+  bottom: 20px;
+}
+
+.swiper__faq {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper__con {
+  position: relative;
+  height: 450px;
+  width: 720px;
+  outline: solid;
+}
+
+.swiper-slide__faq {
+  font-size: 18px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px 50px 30px 30px;
+}
+
+.swiper-slide__faq h5 {
+  padding-top: 15px;
+}
+
+.swiper-slide__faq p {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  padding: 17px;
+}
+
+.swiper-scrollbar-drag {
+  background: white !important;
+}
+
+.swiper-scrollbar {
+  background: transparent !important;
 }
 
 /* Keyframe */
