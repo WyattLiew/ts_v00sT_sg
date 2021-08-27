@@ -11,7 +11,7 @@ body {
   overflow: hidden;
   background-color: black;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: helvetica;
 }
 
 /* Home Page */
@@ -440,7 +440,14 @@ body {
   left: 50px;
 }
 
-.pages__logo img {
+.result__logo {
+  position: absolute;
+  top: 20px;
+  left: 595px;
+}
+
+.pages__logo img,
+.result__logo img {
   height: 75px;
 }
 
@@ -464,7 +471,7 @@ body {
 .pages__locateMe {
   position: absolute;
   bottom: 50px;
-  left: 120px;
+  left: 65px;
 }
 
 .pages__locateMe img {
@@ -473,13 +480,13 @@ body {
 
 .pages__products {
   position: absolute;
-  left: 0;
+  left: -55px;
   top: 160px;
 }
 
 .pages__products__diff {
   position: absolute;
-  left: 95px;
+  left: 40px;
   top: 160px;
 }
 
@@ -487,15 +494,15 @@ body {
 .pages__products__diff img {
   height: 500px;
   position: relative;
-  transform: rotateZ(10deg);
+  transform: rotateZ(15deg);
   animation: productMovement 5s infinite;
 }
 
 .pages__text {
   position: absolute;
-  left: 435px;
+  left: 365px;
   top: 115px;
-  width: 60%;
+  width: 65%;
   margin: auto;
   overflow: hidden;
   display: block;
@@ -615,6 +622,322 @@ body {
 
 .swiper-scrollbar {
   background: transparent !important;
+}
+
+/* Q & A Page */
+#qna_page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+#qna__q1 {
+  display: none;
+}
+
+#qna__q2 {
+  display: none;
+}
+
+#qna__q3 {
+  display: none;
+}
+
+.qna__header {
+  position: relative;
+  top: 135px;
+  width: 100%;
+  text-align: center;
+}
+
+.qna__header h3 {
+  font-size: 40px;
+}
+
+.qna__header p {
+  font-size: 22px;
+  padding-top: 16px;
+}
+
+.qna__details {
+  position: relative;
+  top: 185px;
+}
+
+.qna__question__pos {
+  position: relative;
+  width: 100%;
+}
+
+.qna__question__pos h4 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.qna__btn {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 30px 20px;
+  display: block;
+}
+
+.qna__btn__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.qna__btn__col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: -webkit-center;
+  position: relative;
+}
+
+.q1__img img {
+  width: 200px;
+}
+
+.q2__img img {
+  width: 200px;
+}
+
+.q3__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.q2__img__text1 {
+  position: absolute;
+  left: 145px;
+  top: 25px;
+  color: black;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.q2__img__text2 {
+  position: absolute;
+  left: 145px;
+  top: 25px;
+  color: black;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.q2__img__text3 {
+  position: absolute;
+  left: 130px;
+  top: 25px;
+  color: black;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.q3__img__text1 {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  color: black;
+  font-size: 22px;
+}
+
+.q3__img__text2 {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  color: black;
+  font-size: 22px;
+}
+
+.q3__img__text3 {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  color: black;
+  font-size: 22px;
+}
+
+.q3__img__text4 {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  color: black;
+  font-size: 22px;
+}
+
+.q3__img__text5 {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  color: black;
+  font-size: 22px;
+}
+
+.q3__img__text6 {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  color: black;
+  font-size: 22px;
+}
+
+.q3__img__text7 {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  color: black;
+  font-size: 22px;
+}
+
+.q3__img__text8 {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  color: black;
+  font-size: 22px;
+}
+
+.q3__img__text9 {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  color: black;
+  font-size: 22px;
+}
+
+/* result page */
+#result_page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow: hidden;
+}
+.result__header {
+  position: relative;
+  top: 135px;
+  width: 100%;
+  text-align: center;
+}
+
+.result__header h4 {
+  font-size: 36px;
+}
+
+.result__list {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 30px 20px;
+  display: block;
+  top: 175px;
+}
+
+.result__btn__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result__btn__col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: -webkit-center;
+  position: relative;
+}
+
+.result__btn__col h6 {
+  font-size: 14px;
+  padding-top: 7px;
+}
+
+.result__img img {
+  width: 320px;
+  padding-top: 15px;
+}
+
+.result__img h5 {
+  font-size: 36px;
+}
+
+/* Result bg */
+.result__bg1 {
+  background: url(../assets/bg/Productpagebackground/bg\ 1.png);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.result__bg2 {
+  background: url(../assets/bg/Productpagebackground/bg\ 2.png);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.result__bg3 {
+  background: url(../assets/bg/Productpagebackground/bg\ 3.png);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.result__bg4 {
+  background: url(../assets/bg/Productpagebackground/bg\ 4.png);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.result__bg5 {
+  background: url(../assets/bg/Productpagebackground/bg\ 5.png);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.result__bg6 {
+  background: url(../assets/bg/Productpagebackground/bg\ 6.png);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.result__bg7 {
+  background: url(../assets/bg/Productpagebackground/bg\ 7.png);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.result__bg8 {
+  background: url(../assets/bg/Productpagebackground/bg\ 8.png);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.result__bg9 {
+  background: url(../assets/bg/Productpagebackground/bg\ 9.png);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.result__list {
+  display: none;
 }
 
 /* Keyframe */

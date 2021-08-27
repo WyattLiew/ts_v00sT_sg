@@ -15,8 +15,11 @@ var allProducts_page = document.getElementById('allProducts_page');
 // faq page
 var faq_page = document.getElementById('faq_page');
 
+//Qna page
+var qna_page = document.getElementById('qna_page');
+
 homePage_sel_allProducts.addEventListener("touchstart", handleAllProductsPage,false);
-// homePage_sel_systemPick.addEventListener("touchstart", handleSystemPickPage,false);
+homePage_sel_systemPick.addEventListener("touchstart", handleSystemPickPage,false);
 homePage_sel_faq.addEventListener("touchstart", handleFaqPage,false);
 
 
@@ -39,10 +42,12 @@ function handleFaqPage() {
    // homePageLogo.style.display= "none";
    gsap.to("#homePage",{display:'none',delay:0.5,onComplete:function(){
       allProducts_selection.style.display= "none";
-      homePageLogo.style.display= "none";
-      homePage.style.display="none";
-      faq_page.style.display= "block";
-      faq_page.style.opacity= 1;
+      gsap.to(homePageLogo,{opacity:0,duration:0.2,onComplete:function(){
+         homePageLogo.style.display= "none";
+         homePage.style.display="none";
+         faq_page.style.display= "block";
+         faq_page.style.opacity= 1;
+      }});
          swiper2 = new Swiper(".mySwiper2", {
            direction: "vertical",
            slidesPerView: "auto",
@@ -59,3 +64,23 @@ function handleFaqPage() {
    }});
 }
 
+function handleSystemPickPage() {
+   gsap.to(homePage_selection,{duration:1,x:'-100%'});
+//    gsap.to(homePage_sel_faq,{duration:0.5,opacity:0});
+//    gsap.to(homePage_sel_systemPick,{duration:0.5,opacity:0});
+//    gsap.to(homePage_sel_allProducts,{duration:0.5,opacity:0,delay:0.5});
+   gsap.to("#homePage",{display:'none',delay:0.5,onComplete:function(){
+   allProducts_selection.style.display= "none";
+   gsap.to(homePageLogo,{opacity:0,duration:0.2,onComplete:function(){
+      homePageLogo.style.display= "none";
+   homePage.style.display="none";
+   qna_page.style.display= "block";
+   qna_page.style.opacity= 1;
+   }});
+   gsap.fromTo(".qna__header",{display:'none',opacity:0},{display:'block',opacity:1,duration:0.7,delay:0.5});
+   gsap.fromTo(".qna__details",{opacity:0},{opacity:1,duration:0.6,delay:0.7});
+   gsap.to("#qna__q1",{display:"block",duration:0.7,delay:0.8,onComplete:function(){
+      gsap.to("#qna__q1",{opacity:1,duration:1});
+   }});
+}});
+}

@@ -16,6 +16,7 @@ function backToHomePage(mode){
         allProducts_page.style.display= "none";
         gsap.to("#homePage",{display:'block',onComplete:function(){
             homePageLogo.style.display= "block";
+            homePageLogo.style.opacity= "1";
             gsap.to(homePage_selection,{duration:0.8,x:'0%'});
            }});
        }});
@@ -26,6 +27,7 @@ function backToHomePage(mode){
             swiper2.destroy();
             gsap.to("#homePage",{display:'block',onComplete:function(){
                 homePageLogo.style.display= "block";
+                homePageLogo.style.opacity= "1";
                 gsap.to(homePage_selection,{duration:0.8,x:'0%'});
                }});
            }});
