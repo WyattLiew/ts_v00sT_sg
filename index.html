@@ -27,7 +27,7 @@
                 </div>
                 <div class="homePage__selection__col sel__2" id="homePage_sel_systemPick">
                     <img src="assets/img/mainPic2.png" alt="#">
-                    <h2>Which product suit me?</h2>
+                    <h2>Which product suits me?</h2>
                     <p>Not sure which to choose? Let me help you!</p>
                 </div>
                 <div class="homePage__selection__col sel__3" id="homePage_sel_faq">
@@ -142,7 +142,7 @@
             </div>
         </div>
         <div id="allProducts_homeBtn"  class="homeBtnCcontainer__pos">
-            <button onclick="backToHomePage(1)" class="homeBtn homeBtn__pos"><img src="assets/img/Home.png" alt=""></button>
+            <button onclick="backToHomePage(event,1)" class="homeBtn homeBtn__pos"><img src="assets/img/Home.png" alt=""></button>
         </div>
     <div id="page1" class="pages" >
         <div id="touchSurface_page1" class="touch__pages pages_bg_1">
@@ -177,7 +177,7 @@
                         <p>Assist Healthy Red Blood Cell Production</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 9.png" alt="#">
+                        <img src="assets/Products benefits/Asset 2.png" alt="#">
                         <p>Relieve Fatigue When Dietary Intake Is Inadequate</p>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                 <p>Benefits:</p>
                 <div class="pages__row">
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 14.png" alt="#">
+                        <img src="assets/Products benefits/Asset 2.png" alt="#">
                         <p>Reduce Free Radicals Formed In The Body</p>
                     </div>
                     <div class="pages__col">
@@ -255,7 +255,7 @@
                 <p>Benefits:</p>
                 <div class="pages__row">
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 9.png" alt="#">
+                        <img src="assets/Products benefits/Asset 2.png" alt="#">
                         <p>Reduce Free Radicals Formed In The Body</p>
                     </div>
                     <div class="pages__col">
@@ -337,7 +337,7 @@
                 <p>Benefits:</p>
                 <div class="pages__row">
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 8.png" alt="#">
+                        <img src="assets/Products benefits/Asset 1.png" alt="#">
                         <p>Support Muscle Health</p>
                     </div>
                     <div class="pages__col">
@@ -378,7 +378,7 @@
                         <p>Support General Health And Wellbeing</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 14.png" alt="#">
+                        <img src="assets/Products benefits/Asset 2.png" alt="#">
                         <p>Reduce Free Radicals Formed in the Body</p>
                     </div>
                     <div class="pages__col">
@@ -423,11 +423,11 @@
                         <p>Support Energy Production</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 13.png" alt="#">
+                        <img src="assets/Products benefits/Asset 1.png" alt="#">
                         <p>Support Muscle Performance</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 13.png" alt="#">
+                        <img src="assets/Products benefits/Asset 2.png" alt="#">
                         <p>Reduce Free Radicals Formed In The Body</p>
                     </div>
                 </div>
@@ -493,7 +493,7 @@
                 <p>Benefits:</p>
                 <div class="pages__row">
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 7.png" alt="#">
+                        <img src="assets/Products benefits/Asset 2.png" alt="#">
                         <p>Reduce Free Radicals Formed In The Body</p>
                     </div>
                     <div class="pages__col">
@@ -521,7 +521,7 @@
                         <p>Support General Health & Wellbeing</p>
                     </div>
                     <div class="pages__col">
-                        <img src="assets/Products benefits/Asset 14.png" alt="#">
+                        <img src="assets/Products benefits/Asset 2.png" alt="#">
                         <p>Helps Reduce The Severity And Duration Of Common Cold Symptoms When Taken Regularly</p>
                     </div>
                 </div>
@@ -541,13 +541,16 @@
 <!-- FAQ -->
 <div id="faq_page">
     <div id="faq_homeBtn" class="homeBtnCcontainer__pos">
-        <button onclick="backToHomePage(2)" class="homeBtn homeBtn__pos"><img src="assets/img/Home.png" alt=""></button>
+        <button onclick="backToHomePage(event,2)" class="homeBtn homeBtn__pos"><img src="assets/img/Home.png" alt=""></button>
     </div>
     <div class="pages__logo">
         <img src="assets/logo/VOOST_Logo.png" alt="">
     </div>
     <div class="faq__products">
         <img src="assets/img/faqPic1.png" alt="">
+        <img src="assets/img/faqPic2.png" alt="">
+        <img src="assets/img/faqPic3.png" alt="">
+        <img src="assets/img/mainPic2.png" alt="">
     </div>
     <div class="faq__details">
         <div class="faq__faqIcon">
@@ -641,16 +644,30 @@
         <h3>HELLO!</h3>
         <p>Tell me a little bit about you, so that I can recommend you the most relevant Voost!</p>
     </div>
+    <div class="qna__indicator">
+        <ul>
+            <li id="indicator1"></li>
+            <li id="indicator2"></li>
+            <li id="indicator3"></li>
+        </ul>
+    </div>
     <div class="qna__details">
         <div id="qna__q1" class="qna__question__pos">
             <h4>GENDER</h4>
             <div class="qna__btn">
                 <div class="qna__btn__row">
-                    <div id="qna_gender_m" class="qna__btn__col q1__img">
+                    <div class="qna__btn__col q1__img">
+                        <div id="qna_gender_m">
                         <img src="assets/img/selection 1.png" alt="">
+                        <img class="gender__m" src="assets/img/male icon.png" alt="">
+                        </div>
+
                     </div>
-                    <div id="qna_gender_f" class="qna__btn__col q1__img">
+                    <div class="qna__btn__col q1__img">
+                        <div id="qna_gender_f">
                         <img src="assets/img/selection 1.png" alt="">
+                        <img class="gender__f" src="assets/img/female icon.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -659,15 +676,26 @@
         <div id="qna__q2" class="qna__question__pos">
             <h4>AGE</h4>
             <div class="qna__btn">
-                <div class="qna__btn__row">
-                    <div id="qna_age_1" class="qna__btn__col q2__img">
+                <div class="qna__btn__row2">
+                    <div class="qna__btn__col2 q2__img">
+                        <div  id="qna_age_1" style="width: 205px;">
                         <img src="assets/img/selection 3.png" alt=""><span class="q2__img__text1">18 - 25</span>
+                        </div>
                     </div>
-                    <div id="qna_age_2" class="qna__btn__col q2__img">
-                        <img src="assets/img/selection 3.png" alt=""><span class="q2__img__text2">26 - 49</span>
+                    <div class="qna__btn__col2 q2__img">
+                        <div  id="qna_age_2" style="width: 205px;">
+                        <img src="assets/img/selection 3.png" alt=""><span class="q2__img__text2">26 - 40</span>
+                        </div>
                     </div>
-                    <div id="qna_age_3" class="qna__btn__col q2__img">
-                        <img src="assets/img/selection 3.png" alt=""><span class="q2__img__text3">Above 50</span>
+                    <div class="qna__btn__col2 q2__img">
+                        <div  id="qna_age_3" style="width: 205px;">
+                        <img src="assets/img/selection 3.png" alt=""><span class="q2__img__text3">40 - 60</span>
+                        </div>
+                    </div>
+                    <div class="qna__btn__col2 q2__img">
+                        <div  id="qna_age_4" style="width: 205px;">
+                        <img src="assets/img/selection 3.png" alt=""><span class="q2__img__text4">Above 60</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -677,44 +705,44 @@
             <h4>WHAT BENEFITS ARE YOU LOOKINGS FOR?</h4>
             <div class="qna__btn">
                 <div class="qna__btn__row">
-                    <div id="qna_ans_1" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text1">Supports connective tissue health</span>
+                    <div class="qna__btn__col q3__img1">
+                        <div id="qna_ans_1"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text1">Supports connective tissue health</span></div>
                     </div>
-                    <div id="qna_ans_2" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text2">Supports my skin health</span>
+                    <div class="qna__btn__col q3__img2">
+                        <div id="qna_ans_2"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text2">Supports my skin health</span></div>
                     </div>
-                    <div id="qna_ans_3" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Strengthen my immune system</span>
+                    <div class="qna__btn__col q3__img3">
+                        <div id="qna_ans_3"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Strengthen my immune system</span></div>
                     </div>
-                    <div id="qna_ans_4" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Need enery boost</span>
+                    <div class="qna__btn__col q3__img4">
+                        <div id="qna_ans_4"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text4">Need enery boost</span></div>
                     </div>
-                    <div id="qna_ans_5" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Relieves tiredness & fatigue </span>
+                    <div class="qna__btn__col q3__img5">
+                        <div id="qna_ans_5"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text5">Relieves tiredness & fatigue </span></div>
                     </div>
-                    <div id="qna_ans_6" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Supports muscle performance</span>
+                    <div class="qna__btn__col q3__img6">
+                        <div id="qna_ans_6"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text6">Supports muscle performance</span></div>
                     </div>
-                    <div id="qna_ans_7" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Maintain mental performance</span>
+                    <div class="qna__btn__col q3__img7">
+                        <div id="qna_ans_7"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text7">Maintain mental performance</span></div>
                     </div>
-                    <div id="qna_ans_8" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">General health & well-being</span>
+                    <div class="qna__btn__col q3__img8">
+                        <div id="qna_ans_8"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text8">General health & well-being</span></div>
                     </div>
-                    <div id="qna_ans_9" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Relieves fatigue</span>
+                    <div class="qna__btn__col q3__img9">
+                        <div id="qna_ans_9"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text9">Relieves fatigue</span></div>
                     </div>
-                    <div id="qna_ans_10" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Support mental concentration</span>
+                    <div class="qna__btn__col q3__img10">
+                        <div id="qna_ans_10"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text10">Support mental concentration</span></div>
                     </div>
-                    <div id="qna_ans_11" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Maintain healthy nervous system</span>
+                    <div class="qna__btn__col q3__img11">
+                        <div id="qna_ans_11"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text11">Maintain healthy nervous system</span></div>
                     </div>
-                    <div id="qna_ans_12" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Support bone health</span>
+                    <div  class="qna__btn__col q3__img12">
+                        <div id="qna_ans_12"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text12">Support bone health</span></div>
                     </div>
-                    <div id="qna_ans_13" class="qna__btn__col q3__img">
-                        <img src="assets/img/selection 2.png" alt=""><span class="q3__img__text3">Support teeth health</span>
+                    <div class="qna__btn__col q3__img13">
+                        <div id="qna_ans_13"><img src="assets/img/selection 2.png" alt=""><span class="q3__img__text13">Support teeth health</span></div>
                     </div>
                 </div>
             </div>
@@ -731,21 +759,21 @@
 
         <div id="result_group_1" class="result__list">
             <div class="result__btn__row">
-                <div id="ff1" class="result__btn__col">
+                <div onclick="handleResultToPage2()" class="result__btn__col">
                     <div class="result__img result__bg2">
                         <img src="assets/products/VÖOST_Vitamin-C_Blood-Orange_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Vitamin C</h5>
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="ff2" class="result__btn__col">
+                <div onclick="handleResultToPage3()" class="result__btn__col">
                     <div class="result__img result__bg3">
                         <img src="assets/products/VÖOST_Collagen_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Collagen</h5>    
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="ff3" class="result__btn__col ">
+                <div onclick="handleResultToPage9()" class="result__btn__col ">
                     <div class="result__img result__bg9">
                         <img src="assets/products/VÖOST_Immunity-Blackcurrent_20-Pack_Front_No-Shadow.png" alt="">
                         <h5>Immunity</h5>
@@ -757,21 +785,21 @@
 
         <div id="result_group_2" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage2()" class="result__btn__col">
                     <div class="result__img result__bg2">
                         <img src="assets/products/VÖOST_Vitamin-C_Blood-Orange_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Vitamin C</h5>
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage3()" class="result__btn__col">
                     <div class="result__img result__bg3">
                         <img src="assets/products/VÖOST_Collagen_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Collagen</h5>    
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="#" class="result__btn__col ">
+                <div onclick="handleResultToPage9()" class="result__btn__col ">
                     <div class="result__img result__bg9">
                         <img src="assets/products/VÖOST_Immunity-Blackcurrent_20-Pack_Front_No-Shadow.png" alt="">
                         <h5>Immunity</h5>
@@ -783,14 +811,14 @@
 
         <div id="result_group_3" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage2()" class="result__btn__col">
                     <div class="result__img result__bg2">
                         <img src="assets/products/VÖOST_Vitamin-C_Blood-Orange_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Vitamin C</h5>
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="#" class="result__btn__col ">
+                <div onclick="handleResultToPage9()" class="result__btn__col ">
                     <div class="result__img result__bg9">
                         <img src="assets/products/VÖOST_Immunity-Blackcurrent_20-Pack_Front_No-Shadow.png" alt="">
                         <h5>Immunity</h5>
@@ -802,14 +830,14 @@
 
         <div id="result_group_4" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage1()" class="result__btn__col">
                     <div class="result__img result__bg1">
                         <img src="assets/products/VÖOST_Mega-B-Complex_20-Pack_Front-No-Shadow.png" alt="">
                         <h5>Mega B Complex</h5>
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage8()" class="result__btn__col">
                     <div class="result__img result__bg8">
                         <img src="assets/products/VÖOST_Energy_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Energy</h5>    
@@ -821,7 +849,7 @@
 
         <div id="result_group_5" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage5()" class="result__btn__col">
                     <div class="result__img result__bg5">
                         <img src="assets/products/VÖOST_Magnesium_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Magnesium</h5>
@@ -833,14 +861,14 @@
 
         <div id="result_group_6" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage5()" class="result__btn__col">
                     <div class="result__img result__bg5">
                         <img src="assets/products/VÖOST_Magnesium_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Magnesium</h5>
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage7()" class="result__btn__col">
                     <div class="result__img result__bg7">
                         <img src="assets/products/VÖOST_Performance-B+_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Performance</h5>    
@@ -852,14 +880,14 @@
 
         <div id="result_group_7" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage7()" class="result__btn__col">
                     <div class="result__img result__bg7">
                         <img src="assets/products/VÖOST_Performance-B+_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Performance</h5>    
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                 <div id="#" class="result__btn__col">
+                 <div onclick="handleResultToPage8()" class="result__btn__col">
                     <div class="result__img result__bg8">
                         <img src="assets/products/VÖOST_Energy_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Energy</h5>    
@@ -871,21 +899,21 @@
 
         <div id="result_group_8" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage2()" class="result__btn__col">
                     <div class="result__img result__bg2">
                         <img src="assets/products/VÖOST_Vitamin-C_Blood-Orange_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Vitamin C</h5>
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage6()" class="result__btn__col">
                     <div class="result__img result__bg6">
                         <img src="assets/products/VÖOST_Mv_20 Pack_Front_TGO92.png" alt="">
                         <h5>Multivitamin</h5>    
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="#" class="result__btn__col ">
+                <div onclick="handleResultToPage9()" class="result__btn__col ">
                     <div class="result__img result__bg9">
                         <img src="assets/products/VÖOST_Immunity-Blackcurrent_20-Pack_Front_No-Shadow.png" alt="">
                         <h5>Immunity</h5>
@@ -897,7 +925,7 @@
 
         <div id="result_group_9" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage1()" class="result__btn__col">
                     <div class="result__img result__bg1">
                         <img src="assets/products/VÖOST_Mega-B-Complex_20-Pack_Front-No-Shadow.png" alt="">
                         <h5>Mega B Complex</h5>
@@ -909,7 +937,7 @@
 
         <div id="result_group_10" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage8()" class="result__btn__col">
                     <div class="result__img result__bg8">
                         <img src="assets/products/VÖOST_Energy_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Energy</h5>    
@@ -921,14 +949,14 @@
 
         <div id="result_group_11" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage1()" class="result__btn__col">
                     <div class="result__img result__bg1">
                         <img src="assets/products/VÖOST_Mega-B-Complex_20-Pack_Front-No-Shadow.png" alt="">
                         <h5>Mega B Complex</h5>
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage5()" class="result__btn__col">
                     <div class="result__img result__bg5">
                         <img src="assets/products/VÖOST_Magnesium_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Magnesium</h5>
@@ -940,14 +968,14 @@
 
         <div id="result_group_12" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage4()" class="result__btn__col">
                     <div class="result__img result__bg4">
                         <img src="assets/products/VÖOST_Vitamin-D_20 Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Vitamin D</h5>
                     </div>
                     <h6>Click to Explore</h6>
                 </div>
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage5()" class="result__btn__col">
                     <div class="result__img result__bg5">
                         <img src="assets/products/VÖOST_Magnesium_20-Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Magnesium</h5>
@@ -959,7 +987,7 @@
 
         <div id="result_group_13" class="result__list">
             <div class="result__btn__row">
-                <div id="#" class="result__btn__col">
+                <div onclick="handleResultToPage4()" class="result__btn__col">
                     <div class="result__img result__bg4">
                         <img src="assets/products/VÖOST_Vitamin-D_20 Pack_Front_No-Shadow_TGO92.png" alt="">
                         <h5>Vitamin D</h5>

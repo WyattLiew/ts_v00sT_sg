@@ -17,24 +17,40 @@ var faq_page = document.getElementById('faq_page');
 
 //Qna page
 var qna_page = document.getElementById('qna_page');
+var indicator1 = document.getElementById("indicator1");
+var indicator2 = document.getElementById("indicator2");
+var indicator3 = document.getElementById("indicator3");
+
+// handle clickEnable
+var all_btnClickable = true;
 
 homePage_sel_allProducts.addEventListener("touchstart", handleAllProductsPage,false);
 homePage_sel_systemPick.addEventListener("touchstart", handleSystemPickPage,false);
 homePage_sel_faq.addEventListener("touchstart", handleFaqPage,false);
 
 
-function handleAllProductsPage() {
+function handleAllProductsPage(e) {
+   if(all_btnClickable == true){
+      console.log("1");
    gsap.to(homePage_selection,{duration:1,x:'-100%'});
 //    gsap.to(homePage_sel_faq,{duration:0.5,opacity:0});
 //    gsap.to(homePage_sel_systemPick,{duration:0.5,opacity:0});
 //    gsap.to(homePage_sel_allProducts,{duration:0.5,opacity:0,delay:0.5});
     allProducts_selection.style.display= "block"
    gsap.to("#homePage",{display:'none',delay:0.5,onComplete:function(){
-    gsap.fromTo("#allProducts_selection",{x:'100%'},{x:'0%',duration:1});
+    gsap.fromTo("#allProducts_selection",{x:'100%'},{x:'0%',duration:1,onComplete:function(){
+      all_btnClickable = true;
+    }});
    }});
 }
+   all_btnClickable = false;
+e.stopImmediatePropagation();
+return false;
+}
 
-function handleFaqPage() {
+function handleFaqPage(e) {
+   if(all_btnClickable == true){
+      console.log("3");
    gsap.to(homePage_selection,{duration:1,x:'-100%'});
 //    gsap.to(homePage_sel_faq,{duration:0.5,opacity:0});
 //    gsap.to(homePage_sel_systemPick,{duration:0.5,opacity:0});
@@ -60,16 +76,24 @@ function handleFaqPage() {
          });
       gsap.fromTo(".faq__products",{opacity:0},{opacity:1,duration:0.7,delay:0.5});
       gsap.fromTo(".faq__details",{opacity:0},{opacity:1,duration:0.6,delay:0.6});
-      gsap.fromTo("#faq_homeBtn",{opacity:0},{opacity:1,duration:0.7,delay:0.7});
+      gsap.fromTo("#faq_homeBtn",{opacity:0},{opacity:1,duration:0.7,delay:0.7,onComplete:function(){
+         all_btnClickable = true;
+       }});
    }});
 }
+all_btnClickable = false;
+e.stopImmediatePropagation();
+return false;
+}
 
-function handleSystemPickPage() {
+function handleSystemPickPage(e) {
+   if(all_btnClickable == true){
+      console.log("2");
    gsap.to(homePage_selection,{duration:1,x:'-100%'});
 //    gsap.to(homePage_sel_faq,{duration:0.5,opacity:0});
 //    gsap.to(homePage_sel_systemPick,{duration:0.5,opacity:0});
 //    gsap.to(homePage_sel_allProducts,{duration:0.5,opacity:0,delay:0.5});
-   gsap.to("#homePage",{display:'none',delay:0.5,onComplete:function(){
+   gsap.to("#homePage",{display:'none',delay:0.3,onComplete:function(){
    allProducts_selection.style.display= "none";
    gsap.to(homePageLogo,{opacity:0,duration:0.2,onComplete:function(){
       homePageLogo.style.display= "none";
@@ -77,10 +101,18 @@ function handleSystemPickPage() {
    qna_page.style.display= "block";
    qna_page.style.opacity= 1;
    }});
-   gsap.fromTo(".qna__header",{display:'none',opacity:0},{display:'block',opacity:1,duration:0.7,delay:0.5});
-   gsap.fromTo(".qna__details",{opacity:0},{opacity:1,duration:0.6,delay:0.7});
-   gsap.to("#qna__q1",{display:"block",duration:0.7,delay:0.8,onComplete:function(){
-      gsap.to("#qna__q1",{opacity:1,duration:1});
+   gsap.fromTo(".qna__header",{display:'none',opacity:0},{display:'block',opacity:1,duration:0.7,delay:0.3});
+   gsap.fromTo(".qna__details",{opacity:0},{opacity:1,duration:0.6,delay:0.3});
+   gsap.fromTo(".qna__indicator",{opacity:0},{opacity:1,duration:0.7,delay:1.3});
+   indicator1.style.animation ="pulse 1s alternate infinite";
+   gsap.to("#qna__q1",{display:"block",duration:0.7,delay:0.3,onComplete:function(){
+      gsap.to("#qna__q1",{opacity:1,duration:1,onComplete:function(){
+         all_btnClickable = true;
+       }});
    }});
 }});
+   }
+   all_btnClickable = false;
+e.stopImmediatePropagation();
+return false;
 }
