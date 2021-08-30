@@ -26,6 +26,7 @@ var qna_ans_10 = document.getElementById("qna_ans_10");
 var qna_ans_11 = document.getElementById("qna_ans_11");
 var qna_ans_12 = document.getElementById("qna_ans_12");
 var qna_ans_13 = document.getElementById("qna_ans_13");
+var qna_ans_14 = document.getElementById("qna_ans_14");
 
 qna_gender_m.addEventListener("touchstart", handleQnaGenderM, false);
 qna_gender_f.addEventListener("touchstart", handleQnaGenderF, false);
@@ -48,6 +49,7 @@ qna_ans_10.addEventListener("touchstart", handleQnaAns10, false);
 qna_ans_11.addEventListener("touchstart", handleQnaAns11, false);
 qna_ans_12.addEventListener("touchstart", handleQnaAns12, false);
 qna_ans_13.addEventListener("touchstart", handleQnaAns13, false);
+qna_ans_14.addEventListener("touchstart", handleQnaAns14, false);
 
 // result page
 var result_page = document.getElementById("result_page");
@@ -67,6 +69,7 @@ var result_product_10 = document.getElementById('result_product_10');
 var result_product_11 = document.getElementById('result_product_11');
 var result_product_12 = document.getElementById('result_product_12');
 var result_product_13 = document.getElementById('result_product_13');
+var result_product_14 = document.getElementById('result_product_14');
 
 // result_product_1.addEventListener('click', handleResultToPage1, false);
 
@@ -445,6 +448,27 @@ function handleQnaAns13() {
         gsap.to("#result_group_13",{display:"block"});
         gsap.fromTo(result_page,{opacity:0},{opacity:1,duration:0.5,delay:0.7,onComplete:function(){
                 gsap.to("#result_group_13",{opacity:1,duration:1,onComplete:function(){
+                    all_btnClickable = true;
+                  }});
+         }});
+     }});
+    }
+    all_btnClickable = false;
+}
+
+function handleQnaAns14() {
+    if(all_btnClickable == true){
+    answerList.ans13 = 1;
+    gsap.to(qna__q3,{opacity:0,onComplete:function(){
+        qna__q3.style.display= "none";
+        gsap.to(".pages__logo",{display:'none'});
+        gsap.to(".qna__header",{display:'none'});
+        gsap.to(".qna__details",{opacity:0});
+        clearIndicator();
+        gsap.to(result_page,{display:'block'});
+        gsap.to("#result_group_14",{display:"block"});
+        gsap.fromTo(result_page,{opacity:0},{opacity:1,duration:0.5,delay:0.7,onComplete:function(){
+                gsap.to("#result_group_14",{opacity:1,duration:1,onComplete:function(){
                     all_btnClickable = true;
                   }});
          }});

@@ -103,7 +103,7 @@ function handleSystemPickPage(e) {
    }});
    gsap.fromTo(".qna__header",{display:'none',opacity:0},{display:'block',opacity:1,duration:0.7,delay:0.3});
    gsap.fromTo(".qna__details",{opacity:0},{opacity:1,duration:0.6,delay:0.3});
-   gsap.fromTo(".qna__indicator",{opacity:0},{opacity:1,duration:0.7,delay:1.3});
+   gsap.fromTo(".qna__indicator",{opacity:0},{opacity:1,duration:0.7,delay:1});
    indicator1.style.animation ="pulse 1s alternate infinite";
    gsap.to("#qna__q1",{display:"block",duration:0.7,delay:0.3,onComplete:function(){
       gsap.to("#qna__q1",{opacity:1,duration:1,onComplete:function(){

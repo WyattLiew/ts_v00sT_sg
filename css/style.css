@@ -977,7 +977,8 @@ li:nth-child(n + 2) {
   height: 40px;
 }
 
-.q3__img13 div img {
+.q3__img13 div img,
+.q3__img14 div img {
   width: 280px;
   height: 40px;
 }
@@ -991,7 +992,8 @@ li:nth-child(n + 2) {
 }
 
 .q3__img2 div,
-.q3__img12 div {
+.q3__img12 div,
+.q3__img14 div {
   width: 300px;
   height: 40px;
 }
