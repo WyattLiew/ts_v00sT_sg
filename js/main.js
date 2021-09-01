@@ -28,10 +28,13 @@ homePage_sel_allProducts.addEventListener("touchstart", handleAllProductsPage,fa
 homePage_sel_systemPick.addEventListener("touchstart", handleSystemPickPage,false);
 homePage_sel_faq.addEventListener("touchstart", handleFaqPage,false);
 
+// mode 
+var sel_mode =0;
+
 
 function handleAllProductsPage(e) {
    if(all_btnClickable == true){
-      console.log("1");
+      sel_mode =1;
    gsap.to(homePage_selection,{duration:1,x:'-100%'});
 //    gsap.to(homePage_sel_faq,{duration:0.5,opacity:0});
 //    gsap.to(homePage_sel_systemPick,{duration:0.5,opacity:0});
@@ -50,7 +53,7 @@ return false;
 
 function handleFaqPage(e) {
    if(all_btnClickable == true){
-      console.log("3");
+      sel_mode=3;
    gsap.to(homePage_selection,{duration:1,x:'-100%'});
 //    gsap.to(homePage_sel_faq,{duration:0.5,opacity:0});
 //    gsap.to(homePage_sel_systemPick,{duration:0.5,opacity:0});
@@ -88,7 +91,7 @@ return false;
 
 function handleSystemPickPage(e) {
    if(all_btnClickable == true){
-      console.log("2");
+      sel_mode=2;
    gsap.to(homePage_selection,{duration:1,x:'-100%'});
 //    gsap.to(homePage_sel_faq,{duration:0.5,opacity:0});
 //    gsap.to(homePage_sel_systemPick,{duration:0.5,opacity:0});

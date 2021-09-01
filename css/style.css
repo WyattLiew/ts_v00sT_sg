@@ -454,7 +454,7 @@ body {
 .pages__swipeIcon {
   position: absolute;
   bottom: 25px;
-  left: 740px;
+  left: 700px;
 }
 
 .pages__swipeIcon img {
@@ -476,6 +476,22 @@ body {
 
 .pages__locateMe img {
   height: 50px;
+}
+
+#locateMe_btn1_text,
+#locateMe_btn2_text,
+#locateMe_btn3_text,
+#locateMe_btn4_text,
+#locateMe_btn5_text,
+#locateMe_btn6_text,
+#locateMe_btn7_text,
+#locateMe_btn8_text,
+#locateMe_btn9_text {
+  display: none;
+  position: relative;
+  left: -35px;
+  top: -15px;
+  font-size: 18px;
 }
 
 .pages__products {
@@ -662,7 +678,7 @@ body {
 .qna__indicator {
   position: absolute;
   bottom: 35px;
-  left: 525px;
+  left: 540px;
 }
 
 .qna__indicator ul {
@@ -803,7 +819,7 @@ li:nth-child(n + 2) {
 
 .q2__img__text1 {
   position: absolute;
-  left: 100px;
+  left: 95px;
   top: 25px;
   color: black;
   font-weight: 600;
@@ -812,7 +828,7 @@ li:nth-child(n + 2) {
 
 .q2__img__text2 {
   position: absolute;
-  left: 100px;
+  left: 95px;
   top: 25px;
   color: black;
   font-weight: 600;
@@ -821,7 +837,7 @@ li:nth-child(n + 2) {
 
 .q2__img__text3 {
   position: absolute;
-  left: 100px;
+  left: 95px;
   top: 25px;
   color: black;
   font-weight: 600;
@@ -839,7 +855,7 @@ li:nth-child(n + 2) {
 
 .q3__img__text1 {
   position: absolute;
-  left: 35px;
+  left: 140px;
   top: 23px;
   color: black;
   font-size: 22px;
@@ -847,7 +863,7 @@ li:nth-child(n + 2) {
 
 .q3__img__text2 {
   position: absolute;
-  left: 77px;
+  left: 80px;
   top: 23px;
   color: black;
   font-size: 22px;
@@ -941,7 +957,6 @@ li:nth-child(n + 2) {
   font-size: 22px;
 }
 
-.q3__img1 div img,
 .q3__img3 div img,
 .q3__img6 div img,
 .q3__img11 div img {
@@ -977,13 +992,17 @@ li:nth-child(n + 2) {
   height: 40px;
 }
 
+.q3__img1 div img {
+  width: 220px;
+  height: 40px;
+}
+
 .q3__img13 div img,
 .q3__img14 div img {
   width: 280px;
   height: 40px;
 }
 
-.q3__img1 div,
 .q3__img3 div,
 .q3__img6 div,
 .q3__img11 div {
@@ -1018,6 +1037,10 @@ li:nth-child(n + 2) {
 .q3__img10 div {
   width: 330px;
   height: 40px;
+}
+
+.q3__img1 div {
+  width: 220px;
 }
 
 .q3__img13 div {
