@@ -77,7 +77,10 @@ function handleFaqPage(e) {
            },
            mousewheel: true
          });
+         // random image show
+      var num = Math.floor(Math.random() * 4);
       gsap.fromTo(".faq__products",{opacity:0},{opacity:1,duration:0.7,delay:0.5});
+      gsap.fromTo(`.faq__product${num+1}`,{display:'none',opacity:0},{display:'block',opacity:1,duration:0.7,delay:0.5});
       gsap.fromTo(".faq__details",{opacity:0},{opacity:1,duration:0.6,delay:0.6});
       gsap.fromTo("#faq_homeBtn",{opacity:0},{opacity:1,duration:0.7,delay:0.7,onComplete:function(){
          all_btnClickable = true;

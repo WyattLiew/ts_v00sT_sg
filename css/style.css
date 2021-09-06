@@ -488,11 +488,26 @@ body {
 #locateMe_btn8_text,
 #locateMe_btn9_text {
   display: none;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+}
+
+/* #locateMe_btn1_text,
+#locateMe_btn2_text,
+#locateMe_btn3_text,
+#locateMe_btn4_text,
+#locateMe_btn5_text,
+#locateMe_btn6_text,
+#locateMe_btn7_text,
+#locateMe_btn8_text,
+#locateMe_btn9_text {
+  display: none;
   position: relative;
   left: -35px;
   top: -15px;
   font-size: 18px;
-}
+} */
 
 .pages__products {
   position: absolute;
@@ -575,13 +590,20 @@ body {
 .faq__products img {
   height: 550px;
   position: absolute;
-  animation-name: imageChange;
+  /* animation-name: imageChange;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 16s;
+  animation-duration: 16s; */
 }
 
-.faq__products img:nth-of-type(1) {
+.faq__product1,
+.faq__product2,
+.faq__product3,
+.faq__product4 {
+  display: none;
+}
+
+/* .faq__products img:nth-of-type(1) {
   animation-delay: 0s;
   opacity: 0;
 }
@@ -592,16 +614,14 @@ body {
 }
 
 .faq__products img:nth-of-type(3) {
-  /* add some delay for the first picture as well */
   animation-delay: 8s;
   opacity: 0;
 }
 
 .faq__products img:nth-of-type(4) {
-  /* add some delay for the first picture as well */
   animation-delay: 12s;
   opacity: 0;
-}
+} */
 
 .faq__details {
   position: absolute;

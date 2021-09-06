@@ -129,6 +129,10 @@ function clearAll() {
         gsap.to("#locateMe_btn9",{display:'block'});
     }});
 
+    gsap.to(`.faq__product1`,{display:'none'});
+    gsap.to(`.faq__product2`,{display:'none'});
+    gsap.to(`.faq__product3`,{display:'none'});
+    gsap.to(`.faq__product4`,{display:'none'});
 }
 
 function handlePage1(){
