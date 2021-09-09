@@ -21,6 +21,7 @@ function doInactive() {
             ipcRenderer.send("lights:trigger", "POFF");
             lighting=false;
             }
+            swiper1.destroy();
         allProducts_page.style.display= "none";
         gsap.to("#homePage",{display:'block',onComplete:function(){
             homePageLogo.style.display= "block";

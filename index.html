@@ -1056,28 +1056,37 @@
     <script src="js/main.js"></script>
     <script src="js/products.js"></script>
     <script src="js/qna.js"></script>
-    <script src="js/led.js"></script>
+    <!-- <script src="js/led.js"></script> -->
     <!-- <script src="js/touchbox.js"></script> -->
 
     <!-- Initialize Swiper -->
-    <script>
+    <!-- <script>
         var swiper1 = new Swiper(".mySwiper1", {
             slidesPerView: 4,
             centeredSlides: false,
             spaceBetween: 0,
             grabCursor: true,
+            speed:800,
             // loop: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            // autoplay: {
-            //     delay: 1200,
-            //     disableOnInteraction: true,
-            // }
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            on: {
+                reachEnd: function(){
+                    swiper1.params.autoplay.reverseDirection = true;
+                },
+                reachBeginning: function() {
+                    swiper1.params.autoplay.reverseDirection = false;
+                }
+            }
         });
 
-    </script>
+    </script> -->
 </body>
 
 </html>

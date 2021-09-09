@@ -1,4 +1,4 @@
-var swiper2;
+var swiper1, swiper2;
 
 var homePage_selection = document.getElementById("homePage_selection");
 var homePage_sel_allProducts = document.getElementById("homePage_sel_allProducts");
@@ -41,6 +41,30 @@ function handleAllProductsPage(e) {
 //    gsap.to(homePage_sel_allProducts,{duration:0.5,opacity:0,delay:0.5});
     allProducts_selection.style.display= "block"
    gsap.to("#homePage",{display:'none',delay:0.5,onComplete:function(){
+      swiper1 = new Swiper(".mySwiper1", {
+         slidesPerView: 4,
+         centeredSlides: false,
+         spaceBetween: 0,
+         grabCursor: true,
+         speed:800,
+         // loop: true,
+         pagination: {
+             el: ".swiper-pagination",
+             clickable: true,
+         },
+         autoplay: {
+             delay: 1500,
+             disableOnInteraction: false,
+         },
+         on: {
+             reachEnd: function(){
+                 swiper1.params.autoplay.reverseDirection = true;
+             },
+             reachBeginning: function() {
+                 swiper1.params.autoplay.reverseDirection = false;
+             }
+         }
+     });
     gsap.fromTo("#allProducts_selection",{x:'100%'},{x:'0%',duration:1,onComplete:function(){
       all_btnClickable = true;
     }});
