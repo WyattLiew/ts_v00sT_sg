@@ -32,7 +32,7 @@ list__img9.addEventListener('click',handlePageByList9,false);
 // Home btn
 function backToHomePage(e,mode){
     if(all_btnClickable == true){
-    if(mode ==1){
+    if(mode ==1 && sel_mode !==2){
     gsap.to(allProducts_page,{opacity:0,duration:0.5,onComplete:function(){
         clearAll();
             if(lighting==true){
@@ -54,6 +54,22 @@ function backToHomePage(e,mode){
             clearAll();
             faq_page.style.display= "none";
             swiper2.destroy();
+            gsap.to("#homePage",{display:'block',onComplete:function(){
+                homePageLogo.style.display= "block";
+                homePageLogo.style.opacity= "1";
+                gsap.to(homePage_selection,{duration:0.8,x:'0%',onComplete:function(){
+                    all_btnClickable = true;
+                  }});
+               }});
+           }});
+    } else if(mode ==1 && sel_mode==2){
+        gsap.to(allProducts_page,{opacity:0,duration:0.5,onComplete:function(){
+            clearAll();
+                if(lighting==true){
+                ipcRenderer.send("lights:trigger", "POFF");
+                lighting=false;
+                }
+            allProducts_page.style.display= "none";
             gsap.to("#homePage",{display:'block',onComplete:function(){
                 homePageLogo.style.display= "block";
                 homePageLogo.style.opacity= "1";
