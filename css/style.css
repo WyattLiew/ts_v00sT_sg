@@ -655,7 +655,7 @@ body {
 .swiper__con {
   position: relative;
   height: 450px;
-  width: 720px;
+  width: 750px;
   outline: solid;
 }
 
@@ -674,7 +674,7 @@ body {
 .swiper-slide__faq p {
   font-size: 15px;
   line-height: 20px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   padding: 17px;
 }
 

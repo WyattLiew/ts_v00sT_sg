@@ -31,6 +31,8 @@ homePage_sel_faq.addEventListener("touchstart", handleFaqPage,false);
 // mode 
 var sel_mode =0;
 
+// page num for list item
+var page_num = 0;
 
 function handleAllProductsPage(e) {
    if(all_btnClickable == true){
@@ -54,14 +56,14 @@ function handleAllProductsPage(e) {
          },
          autoplay: {
              delay: 1500,
-             disableOnInteraction: false,
+             disableOnInteraction: true,
          },
          on: {
              reachEnd: function(){
-                 swiper1.params.autoplay.reverseDirection = true;
+               swiper1.params.autoplay.reverseDirection = true;
              },
              reachBeginning: function() {
-                 swiper1.params.autoplay.reverseDirection = false;
+               swiper1.params.autoplay.reverseDirection = false;
              }
          }
      });
