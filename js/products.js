@@ -1027,6 +1027,7 @@ var ts_hp9 = document.getElementById('touchSurface_page9');
 
 swipedetect(ts_hp1,function(swipedir){
     if(swipedir =='left'){
+        page_num = 2;
         gsap.to("#page1",{zIndex:0});
         gsap.to("#page9",{zIndex:0});
         gsap.to("#page2",{zIndex:11,opacity: 1});
@@ -1044,6 +1045,7 @@ swipedetect(ts_hp1,function(swipedir){
                 }
         }});
     } else if(swipedir =='right'){
+            page_num = 9;
             gsap.to("#page1",{zIndex:0});
             gsap.to("#page2",{zIndex:0});
             gsap.to("#page9",{zIndex:11,opacity: 1});
@@ -1065,6 +1067,7 @@ swipedetect(ts_hp1,function(swipedir){
 
 swipedetect(ts_hp2,function(swipedir){
     if(swipedir =='left'){
+        page_num = 3;
         gsap.to("#page2",{zIndex:0});
         gsap.to("#page1",{zIndex:0});
         gsap.to("#page3",{zIndex:11,opacity: 1});
@@ -1082,6 +1085,7 @@ swipedetect(ts_hp2,function(swipedir){
             }
         }});
     } else if(swipedir =='right'){
+        page_num = 1;
         gsap.to("#page2",{zIndex:0});
         gsap.to("#page3",{zIndex:0});
         gsap.to("#page1",{zIndex:11,opacity: 1});
@@ -1103,6 +1107,7 @@ swipedetect(ts_hp2,function(swipedir){
 
 swipedetect(ts_hp3,function(swipedir){
     if(swipedir =='left'){
+        page_num = 4;
         gsap.to("#page3",{zIndex:0});
         gsap.to("#page2",{zIndex:0});
         gsap.to("#page4",{zIndex:11,opacity: 1});
@@ -1120,6 +1125,7 @@ swipedetect(ts_hp3,function(swipedir){
                 }
         }});
     } else if(swipedir =='right'){
+        page_num = 2;
             gsap.to("#page3",{zIndex:0});
             gsap.to("#page4",{zIndex:0});
             gsap.to("#page2",{zIndex:11,opacity: 1});
@@ -1141,6 +1147,7 @@ swipedetect(ts_hp3,function(swipedir){
 
 swipedetect(ts_hp4,function(swipedir){
     if(swipedir =='left'){
+        page_num = 5;
         gsap.to("#page3",{zIndex:0});
         gsap.to("#page4",{zIndex:0});
         gsap.to("#page5",{zIndex:11,opacity: 1});
@@ -1158,6 +1165,7 @@ swipedetect(ts_hp4,function(swipedir){
                 }
         }});
     } else if(swipedir =='right'){
+        page_num = 3;
             gsap.to("#page5",{zIndex:0});
             gsap.to("#page4",{zIndex:0});
             gsap.to("#page3",{zIndex:11,opacity: 1});
@@ -1179,6 +1187,7 @@ swipedetect(ts_hp4,function(swipedir){
 
 swipedetect(ts_hp5,function(swipedir){
     if(swipedir =='left'){
+        page_num = 6;
         gsap.to("#page5",{zIndex:0});
         gsap.to("#page4",{zIndex:0});
         gsap.to("#page6",{zIndex:11,opacity: 1});
@@ -1197,6 +1206,7 @@ swipedetect(ts_hp5,function(swipedir){
         }});
 
     } else if(swipedir =='right'){
+        page_num = 4;
             gsap.to("#page5",{zIndex:0});
             gsap.to("#page6",{zIndex:0});
             gsap.to("#page4",{zIndex:11,opacity: 1});
@@ -1218,6 +1228,7 @@ swipedetect(ts_hp5,function(swipedir){
 
 swipedetect(ts_hp6,function(swipedir){
     if(swipedir =='left'){
+        page_num = 7;
         gsap.to("#page5",{zIndex:0});
         gsap.to("#page6",{zIndex:0});
         gsap.to("#page7",{zIndex:11,opacity: 1});
@@ -1236,6 +1247,7 @@ swipedetect(ts_hp6,function(swipedir){
         }});
 
     } else if(swipedir =='right'){
+        page_num = 5;
             gsap.to("#page7",{zIndex:0});
             gsap.to("#page6",{zIndex:0});
             gsap.to("#page5",{zIndex:11,opacity: 1});
@@ -1257,6 +1269,7 @@ swipedetect(ts_hp6,function(swipedir){
 
 swipedetect(ts_hp7,function(swipedir){
     if(swipedir =='left'){
+        page_num = 8;
         gsap.to("#page6",{zIndex:0});
         gsap.to("#page7",{zIndex:0});
         gsap.to("#page8",{zIndex:11,opacity: 1});
@@ -1275,6 +1288,7 @@ swipedetect(ts_hp7,function(swipedir){
         }});
 
     } else if(swipedir =='right'){
+        page_num = 6;
             gsap.to("#page7",{zIndex:0});
             gsap.to("#page8",{zIndex:0});
             gsap.to("#page6",{zIndex:11,opacity: 1});
@@ -1296,6 +1310,7 @@ swipedetect(ts_hp7,function(swipedir){
 
 swipedetect(ts_hp8,function(swipedir){
     if(swipedir =='left'){
+        page_num = 9;
         gsap.to("#page7",{zIndex:0});
         gsap.to("#page8",{zIndex:0});
         gsap.to("#page9",{zIndex:11,opacity: 1});
@@ -1315,6 +1330,7 @@ swipedetect(ts_hp8,function(swipedir){
 
 
     } else if(swipedir =='right'){
+        page_num = 7;
             gsap.to("#page8",{zIndex:0});
             gsap.to("#page9",{zIndex:0});
             gsap.to("#page7",{zIndex:11,opacity:1});
@@ -1336,6 +1352,7 @@ swipedetect(ts_hp8,function(swipedir){
 
 swipedetect(ts_hp9,function(swipedir){
     if(swipedir =='left'){
+        page_num = 1;
         gsap.to("#page8",{zIndex:0});
         gsap.to("#page9",{zIndex:0});
         gsap.to("#page1",{zIndex:11,opacity:1});
@@ -1353,6 +1370,7 @@ swipedetect(ts_hp9,function(swipedir){
                 }
         }});
     } else if(swipedir =='right'){
+        page_num = 9;
         gsap.to("#page9",{zIndex:0});
         gsap.to("#page1",{zIndex:0});
         gsap.to("#page8",{zIndex:11,opacity:1});
